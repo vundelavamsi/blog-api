@@ -1,0 +1,36 @@
+GET http://localhost:3000/
+###
+
+GET http://localhost:3000/users
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username": "user3",
+    "email": "user3@example.com"
+}
+###
+
+POST http://localhost:3000/blogs
+Content-Type: application/json
+
+{
+    "title": "Blog 3",
+    "content": "Sample content for Blog 3",
+    "userId": 3
+}
+###
+
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+    "text": "Comment 3 for Blog 2",
+    "userId": 3,
+    "blogId": 2
+}
+###
+
+GET http://localhost:3000/users/4/level/2
